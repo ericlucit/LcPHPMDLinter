@@ -1,0 +1,52 @@
+# The PHPMD (PHP Mess Detector) Arcanist Linter
+
+This is a lint engine for PHPMD
+
+## Installing
+
+If you are running lcutils, you can install with `lc get lcphpmdlinter --destination=/usr/local/bin/` in the `/usr/local/bin` directory
+
+All other users, use git clone to install into your preferred destination
+
+## Configuring your Project
+
+In your project, configure the following
+
+**.arcconfig**
+```
+"load": [
+        "/usr/local/bin/lcphpmdlinter/src"
+    ]
+```
+
+**.arclint**
+```
+"lcphpmdlinter": {
+      "type": "lcphpmdlinter",
+      "include": "(\\.php$)"
+    }
+```
+
+**phpmd.xml**
+Define your rules, something like the following
+```lang=xml
+<?xml version="1.0"?>
+<ruleset name="My first PHPMD rule set"
+         xmlns="http://pmd.sf.net/ruleset/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0
+                     http://pmd.sf.net/ruleset_xml_schema.xsd"
+         xsi:noNamespaceSchemaLocation="
+                     http://pmd.sf.net/ruleset_xml_schema.xsd">
+    <description>
+        Your Custom Ruleset
+    </description>
+
+    <rule ref="rulesets/unusedcode.xml" />
+    <rule ref="rulesets/cleancode.xml/UndefinedVariable" />
+    <rule ref="rulesets/design.xml/DevelopmentCodeFragment" />
+    <rule ref="rulesets/naming.xml/ConstructorWithNameAsEnclosingClass" />
+
+
+</ruleset>
+```
