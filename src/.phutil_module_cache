@@ -1,0 +1,1 @@
+{"__symbol_cache_version__":11,"50c97b270e4bd608b1779d5cf7f2b44b":{"have":{"class":{"LcPHPMDLinter":53}},"need":{"function":{"pht":319,"csprintf":1528,"execx":2148,"id":3372},"class":{"ArcanistExternalLinter":75,"ExecFuture":1629,"ArcanistLintMessage":3379,"ArcanistLintSeverity":3906}},"xmap":{"LcPHPMDLinter":["ArcanistExternalLinter"]}}}
