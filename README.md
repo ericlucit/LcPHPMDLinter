@@ -1,6 +1,10 @@
-# The PHPMD (PHP Mess Detector) Arcanist Linter
+# The PHPMD (PHP Mess Detector) Linter for Arcanist and Phabricator
 
 This is a lint engine for PHPMD
+
+## Prerequisites
+This requires `phpunit` and `arcanist` to be installed locally
+
 
 ## Installing
 
@@ -50,3 +54,13 @@ Define your rules, something like the following
 
 </ruleset>
 ```
+
+
+## License
+All source code is licensed under the [Apache 2.0 license](LICENSE), the same license as for the Arcanist project.
+
+## Lucit
+Lucit is the company behind Layout : The application that connects big-ticket inventory applications (Automotive, Ag, Rec, Real Estate) to digital billboards, in real-time.
+
+We stream inventory - direct, in real-time to digital billboards, anywhere. https://lucit.cc
+
